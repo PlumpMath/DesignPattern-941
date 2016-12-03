@@ -55,9 +55,6 @@
     <Compile Include="CreatePattern\Singlton\Default\cSingltonSample.cs" />
     <Compile Include="CreatePattern\Singlton\Holder\cSingltonHolderSample.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

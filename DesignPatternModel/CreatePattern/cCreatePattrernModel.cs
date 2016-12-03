@@ -1,14 +1,10 @@
-﻿using DesignPatternModel.CreatePattern.FactoryMethod;
-using DesignPatternModel.CreatePattern.FactoryMethod.Generic;
-using DesignPatternModel.CreatePattern.FactoryMethod.Generic.Abstruct;
+﻿using DesignPatternModel.CreatePattern.FactoryMethod.Generic;
 using DesignPatternModel.CreatePattern.FactoryMethod.Stantard;
 using DesignPatternModel.CreatePattern.Singlton.Default;
 using DesignPatternModel.CreatePattern.Singlton.Holder;
 using DesignPatternModel.CreatePattern.Singlton.Multi;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DesignPatternModel.CreatePattern

@@ -1,10 +1,5 @@
 ﻿using DesignPatternModel.CreatePattern.FactoryMethod.Abstruct;
 using DesignPatternModel.CreatePattern.FactoryMethod.Stantard.Abstruct;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatternModel.CreatePattern.FactoryMethod.Stantard
 {
