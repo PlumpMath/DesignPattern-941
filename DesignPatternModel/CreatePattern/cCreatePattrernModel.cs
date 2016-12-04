@@ -1,4 +1,5 @@
 ﻿using DesignPatternModel.CreatePattern.FactoryMethod.Generic;
+using DesignPatternModel.CreatePattern.FactoryMethod.Generic.Abstruct;
 using DesignPatternModel.CreatePattern.FactoryMethod.Stantard;
 using DesignPatternModel.CreatePattern.Singlton.Default;
 using DesignPatternModel.CreatePattern.Singlton.Holder;
@@ -13,7 +14,7 @@ namespace DesignPatternModel.CreatePattern
     {
         public void SingltonSample()
         {
-            int count = (int)Math.Pow(10,6);
+            int count = (int)Math.Pow(10, 6);
             List<cSingltonSample> O0 = new List<cSingltonSample>();
             List<cSingltonSample> O1 = new List<cSingltonSample>();
             List<cSingltonSample> O2 = new List<cSingltonSample>();
@@ -158,7 +159,7 @@ namespace DesignPatternModel.CreatePattern
             List<string> list = new List<string>() { "いちご", "もも", "いちじく" };
 
             Console.WriteLine("五十音順で表示:");
-            string dic= new cDictionaryOrderCreator().anOperation(list);
+            string dic = new cDictionaryOrderCreator().anOperation(list);
             Console.WriteLine(dic);
 
             Console.WriteLine("長さ順で表示:");
@@ -170,13 +171,12 @@ namespace DesignPatternModel.CreatePattern
         {
             List<string> list = new List<string>() { "いちご", "もも", "いちじく" };
 
-            cStringListComparer stringListComparer = new cStringListComparer();
             Console.WriteLine("五十音順で表示:");
-            string dic = stringListComparer.DictionaryOrder.anOperation(list);
+            string dic = new genericCreator<cDictionaryOrderProduct>().anOperation(list);
             Console.WriteLine(dic);
 
             Console.WriteLine("長さ順で表示:");
-            string len = stringListComparer.LengthOrder.anOperation(list);
+            string len = new genericCreator<cDictionaryOrderProduct>().anOperation(list);
             Console.WriteLine(len);
         }
     }
